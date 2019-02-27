@@ -1,0 +1,33 @@
+{
+  "name": "chains-sdk",
+  "version": "0.1.0",
+  "description": "multi-chain toolkit to build transactions and interact with chains-api",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnsbeharry/chains-sdk.git"
+  },
+  "keywords": [
+    "wallet",
+    "library",
+    "web3",
+    "bitcoin",
+    "ethereum",
+    "polkadot",
+    "stellar"
+  ],
+  "author": "Johns Beharry <johns@peakshift.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnsbeharry/chains-sdk/issues"
+  },
+  "homepage": "https://github.com/johnsbeharry/chains-sdk#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "cucumber": "^5.1.0",
+    "typescript": "^3.3.3333"
+  }
+}

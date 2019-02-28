@@ -5,8 +5,6 @@ import {
 	Transaction,
 } from './utils/types';
 
-import templates from './utils/templates';
-
 
 /** Connect to a chain and start a new wallet instance */
 class Wallet {
@@ -23,6 +21,8 @@ class Wallet {
 		this.account = account || null;
 	};
 
+	// ACCOUNT
+
 	/*
 	 * Get the balance from the Account if field is set or the passed address
 	 * @param {string} [account=this.account] 
@@ -33,6 +33,8 @@ class Wallet {
 	}
 
 	public getAccounts(){}
+
+	public createAccount(){}
 
 	// TRANSACTIONS
 
@@ -72,8 +74,9 @@ class Wallet {
 
 	// ENCRYPTION TOOLS
 	public encryptWithPublicKey(){}
-	public ecryptWithPrivateKey(){}
-
+	public decryptWithPrivateKey(){}
+	public signMessage(){}
+	public verifySignature(){}
 
 	// EXCHANGE RATES
 	public getRateIn(){}

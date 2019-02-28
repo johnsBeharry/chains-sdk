@@ -4,7 +4,13 @@
   "description": "multi-chain toolkit to build transactions and interact with chains-api",
   "main": "index.js",
   "scripts": {
+    "build": "tsc -p ./src",
+    "start": "npm run build -- -w",
     "test": "cucumber-js"
+  },
+  "compilerOptions": {
+    "sourceMap": true,
+    "outDir": "./dist"
   },
   "repository": {
     "type": "git",
@@ -25,9 +31,12 @@
     "url": "https://github.com/johnsbeharry/chains-sdk/issues"
   },
   "homepage": "https://github.com/johnsbeharry/chains-sdk#readme",
-  "dependencies": {
+  "devDependencies": {
     "chai": "^4.2.0",
     "cucumber": "^5.1.0",
     "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "bip39": "^2.5.0"
   }
 }

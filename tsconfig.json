@@ -1,0 +1,8 @@
+{
+	"compilerOptions": {
+		"checkJs": true,
+		"noImplicitAny": true,
+		"target": "es5",
+		"module": "commonjs"
+	}
+}

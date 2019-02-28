@@ -1,34 +1,83 @@
-import types from './utils/types';
+import {
+	Account,
+	Network,
+	ChainInfo,
+	Transaction,
+} from './utils/types';
+
 import templates from './utils/templates';
 
+
+/** Connect to a chain and start a new wallet instance */
 class Wallet {
-	constructor(public chain: string, public node: string){}
+	private account: Account;
+	private network: Network;
 
-	public function getBalance(){}
-	public function getAccounts(){}
+	/**
+	 * Create a wallet
+	 * @param {Network} network - The chain-api chain and node.
+	 * @param {Account} account - public/privateKey to instansiate the wallet with
+	 */
+	constructor(network: Network, account?: Account) {
+		this.network = network || null;
+		this.account = account || null;
+	};
 
-	// Transactions
-	public function getTransaction(){}
-	public function getTransactions(){}
-	public function signTransaction(){}
+	/*
+	 * Get the balance from the Account if field is set or the passed address
+	 * @param {string} [account=this.account] 
+	 * @return {number} The balance of the account
+	 */
+	public getBalance(address?: string): number {
+		return;
+	}
 
-	public function suggestTransactionFee(){}
-	public function sendTransaction(){}
+	public getAccounts(){}
 
-	public function getPendingBonce(){}
-	public function cancelTransaction(){}
+	// TRANSACTIONS
 
-	// Block
-	public function getBlockHeight(){}
+	/**
+	 * Fetch a single transaction from the chain
+	 * @param {string} id - The transaction ID
+	 * @return {Transaction} - Transaction object with the result
+	 */
+	public getTransaction(id: string): Transaction {
+		return;
+	}
 
-	// Encryption Tools
-	public function encryptWithPublicKey(){}
-	public function decryptWithPrivateKey(){}
+	/**
+	 * Get a list of transactions
+	 * @param {Account} 
+	 * @return {Array<Transaction>}
+	 */
+	public getTransactions(account?: Account): Array<Transaction> {
+		if(account === undefined && this.account != null) {
+			
+		}
+
+		return;	
+	}
+
+	public buildTransaction(){}
+	public signTransaction(){}
+
+	public suggestTransactionFee(){}
+	public sendTransaction(){}
+
+	public getPendingBonce(){}
+	public cancelTransaction(){}
+
+	// BLOCK
+	public getBlockHeight(){}
+
+	// ENCRYPTION TOOLS
+	public encryptWithPublicKey(){}
+	public ecryptWithPrivateKey(){}
 
 
-	// Exchange Rates
-	public function getRateIn(){}
+	// EXCHANGE RATES
+	public getRateIn(){}
 
-	// Chain Info
-	public function chainVersion(){}
+	// CHAIN INFO
+	public chainVersion(){}
 }

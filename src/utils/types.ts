@@ -5,12 +5,11 @@ export interface Account {
 
 export interface Network {
 	chain: string,
-	node: string,
+	node?: string,
 }
 
 export interface ChainInfo extends Network {
-	version: string,
-	
+	version: string,	
 }
 
 export interface Transaction {

@@ -3,7 +3,7 @@ import {
 	Network,
 	ChainInfo,
 	Transaction,
-} from './utils/types';
+} from "./utils/types";
 
 
 /** Connect to a chain and start a new wallet instance */
@@ -34,6 +34,9 @@ class Wallet {
 
 	public getAccounts(){}
 
+	/* Generate mnemonic
+	 * 
+	 */
 	public createAccount(){}
 
 	// TRANSACTIONS

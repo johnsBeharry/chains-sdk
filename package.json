@@ -32,11 +32,12 @@
   },
   "homepage": "https://github.com/johnsbeharry/chains-sdk#readme",
   "devDependencies": {
-    "chai": "^4.2.0",
+    "@types/bip39": "^2.4.2",
+ 	"chai": "^4.2.0",
     "cucumber": "^5.1.0",
     "typescript": "^3.3.3333"
   },
   "dependencies": {
-    "bip39": "^2.5.0"
+   "bip39": "^2.5.0"
   }
 }

@@ -7,7 +7,7 @@ import {
 
 
 /** Connect to a chain and start a new wallet instance */
-class Wallet {
+export default class Wallet {
 	private account: Account;
 	private network: Network;
 

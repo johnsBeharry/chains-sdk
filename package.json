@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc -p ./src",
     "start": "npm run build -- -w",
-    "test": "jest; cucumber-js"
+    "test": "jest;"
   },
   "compilerOptions": {
     "sourceMap": true,

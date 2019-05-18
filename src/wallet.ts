@@ -32,7 +32,9 @@ export default class Wallet {
 		return;
 	}
 
-	public getAccounts(){}
+	public getAccounts(): [Account] {
+		return;
+	}
 
 	/* Generate mnemonic
 	 * 

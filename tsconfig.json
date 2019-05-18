@@ -1,8 +1,9 @@
 {
 	"compilerOptions": {
-		"checkJs": true,
 		"noImplicitAny": true,
 		"target": "es5",
-		"module": "commonjs"
+		"module": "commonjs",
+		"sourceMap": true,
+		"esModuleInterop": true
 	}
 }

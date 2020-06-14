@@ -44,6 +44,7 @@
 		"typescript": "^3.9.5"
 	},
 	"dependencies": {
+		"@lntools/invoice": "^0.7.1",
 		"bip39": "^2.5.0",
 		"bip44-constants": "^8.0.0",
 		"bolt11": "^1.2.7",

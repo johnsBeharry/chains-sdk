@@ -8,33 +8,33 @@ The Javascript SDK will primarily be used in for the creation of Digital Wallets
 
     getBalance()
     getAccounts()
-    
+
     // Transactions
     getTransaction()
     getTransactions()
     signTransaction()
-    
+
     suggestTransactionFee()
     sendTransaction()
     sendSignedTransaction()
-    
+
     getPendingNonce()
     cancelTransaction()
-    
+
     // Block
     getBlockHeight()
-    
+
     // Encrpytion Tools
     encryptWithPublicKey()
     decryptWithPrivateKey()
-    
+
     // Exchange Rates
     getRateIn()
-    
+
     // Chain Data
     chainVersion()
     chain
-    
+
     // Events
     events = [
     	'new_transaction',
@@ -42,16 +42,16 @@ The Javascript SDK will primarily be used in for the creation of Digital Wallets
     	'transaction_failed',
     	'...',
     ]
-    
+
     // Example Usage
-    
+
     var wallet = new Wallet({chain: 'doge', node: 'https//chains-api'})
     wallet.getBalance('dSdfd3423...')
-    
+
     var wallet2 = new Wallet({chain: 'eth', node: 'https//chains-api'})
     wallet2.getBalance('0x...')
     wallet2.getTransaction(...)
-    
+
     var wallet3 = new Wallet({chain: 'btc', node: 'https//chains-api'})
     wallet3.getBalance('b1234...')
 

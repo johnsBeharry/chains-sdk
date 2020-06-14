@@ -1,26 +1,24 @@
-import {
-	Network,
-} from "./types";
+import { Network } from "./types";
 
 import * as bip39 from "bip39";
 
 /** Generate public/private key pairs */
 class Account {
 	private network: Network;
-	
+
 	/**
-	 *  
+	 *
 	 */
 	constructor(network: Network) {
-		this.network = network;	
-	};
+		this.network = network;
+	}
 
 	/*
 	 * Check if mnemonic is valid
 	 */
 	public isValid(mnomonic: string): boolean {
-		return;	
-	};
+		return;
+	}
 
 	/*
 	 * Generate a mnemonic given some random entropy
@@ -28,7 +26,7 @@ class Account {
 	 */
 	public generate(entropy: string): string {
 		return;
-	};
+	}
 
 	/*
 	 * Get public key from mnemonic
@@ -36,7 +34,7 @@ class Account {
 	 */
 	public getPrivateKey(): string {
 		return;
-	};
+	}
 
 	/*
 	 * Get public key from mnemonic
@@ -44,5 +42,5 @@ class Account {
 	 */
 	public getPublicKey(mnomonic: string): string {
 		return;
-	};
+	}
 }

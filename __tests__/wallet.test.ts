@@ -8,11 +8,14 @@ const mock = {
 	addresses: [1, 2, 3, 4],
 };
 
-test('create bitcoin account', () => {
-	const wallet = new Wallet({chain: 'btc'});
-	const addresses = wallet.getAccounts();
-	for(let i = 0; i < addresses.length; i++) {
-		expect(addresses[i]).toBe(mock.addresses[i]);
+test("create bitcoin account", async () => {
+	try {
+		const wallet = new Wallet({ chain: "btc" });
+		const addresses = await wallet.getAccounts();
+		for (let i = 0; i < addresses.length; i++) {
+			expect(addresses[i]).toBe(mock.addresses[i]);
+		}
+	} catch (error) {
+		console.log("error");
 	}
 });
-

@@ -1,52 +1,53 @@
 {
-  "name": "chains-sdk",
-  "version": "0.1.0",
-  "description": "multi-chain toolkit to build transactions and interact with chains-api",
-  "main": "index.js",
-  "scripts": {
-    "build": "tsc -p ./src",
-    "start": "npm run build -- -w",
-    "test": "jest;"
-  },
-  "compilerOptions": {
-    "sourceMap": true,
-    "outDir": "./dist"
-  },
-  "jest": {
-    "preset": "ts-jest",
-    "testEnvironment": "node"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/johnsbeharry/chains-sdk.git"
-  },
-  "keywords": [
-    "wallet",
-    "library",
-    "web3",
-    "bitcoin",
-    "ethereum",
-    "polkadot",
-    "stellar"
-  ],
-  "author": "Johns Beharry <johns@peakshift.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/johnsbeharry/chains-sdk/issues"
-  },
-  "homepage": "https://github.com/johnsbeharry/chains-sdk#readme",
-  "devDependencies": {
-    "@types/bip39": "^2.4.2",
-    "@types/jest": "^24.0.9",
-    "chai": "^4.2.0",
-    "cucumber": "^5.1.0",
-    "ts-jest": "^25.5.1",
-    "typescript": "^3.3.3333"
-  },
-  "dependencies": {
-    "bip39": "^2.5.0",
-    "bip44-constants": "^8.0.0",
-    "eth-crypto": "^1.6.0",
-    "jest": "^26.0.1"
-  }
+	"name": "chains-sdk",
+	"version": "0.1.0",
+	"description": "multi-chain toolkit to build transactions and interact with chains-api",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc -p ./src",
+		"start": "npm run build -- -w",
+		"test": "jest;"
+	},
+	"compilerOptions": {
+		"sourceMap": true,
+		"outDir": "./dist"
+	},
+	"jest": {
+		"preset": "ts-jest",
+		"testEnvironment": "node"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/johnsbeharry/chains-sdk.git"
+	},
+	"keywords": [
+		"wallet",
+		"library",
+		"web3",
+		"bitcoin",
+		"ethereum",
+		"polkadot",
+		"stellar"
+	],
+	"author": "Johns Beharry <johns@peakshift.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/johnsbeharry/chains-sdk/issues"
+	},
+	"homepage": "https://github.com/johnsbeharry/chains-sdk#readme",
+	"devDependencies": {
+		"@types/bip39": "^2.4.2",
+		"@types/jest": "^26.0.0",
+		"chai": "^4.2.0",
+		"cucumber": "^5.1.0",
+		"ts-jest": "^26.1.0",
+		"typescript": "^3.9.5"
+	},
+	"dependencies": {
+		"bip39": "^2.5.0",
+		"bip44-constants": "^8.0.0",
+		"bolt11": "^1.2.7",
+		"eth-crypto": "^1.6.0",
+		"jest": "^26.0.1"
+	}
 }

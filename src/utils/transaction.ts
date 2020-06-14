@@ -1,7 +1,4 @@
-import btc from './btc/transaction';
-import eth from './eth/transaction';
+import btc from "./btc/transaction";
+import eth from "./eth/transaction";
 
-export {
-	btc,
-	eth,
-}
+export { btc, eth };

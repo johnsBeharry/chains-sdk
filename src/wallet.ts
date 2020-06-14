@@ -1,10 +1,4 @@
-import {
-	Account,
-	Network,
-	ChainInfo,
-	Transaction,
-} from "./utils/types";
-
+import { Account, Network, ChainInfo, Transaction } from "./utils/types";
 
 /** Connect to a chain and start a new wallet instance */
 export default class Wallet {
@@ -19,13 +13,13 @@ export default class Wallet {
 	constructor(network: Network, account?: Account) {
 		this.network = network || null;
 		this.account = account || null;
-	};
+	}
 
 	// ACCOUNT
 
 	/*
 	 * Get the balance from the Account if field is set or the passed address
-	 * @param {string} [account=this.account] 
+	 * @param {string} [account=this.account]
 	 * @return {number} The balance of the account
 	 */
 	public getBalance(address?: string): number {
@@ -37,9 +31,9 @@ export default class Wallet {
 	}
 
 	/* Generate mnemonic
-	 * 
+	 *
 	 */
-	public createAccount(){}
+	public createAccount() {}
 
 	// TRANSACTIONS
 
@@ -54,38 +48,37 @@ export default class Wallet {
 
 	/**
 	 * Get a list of transactions
-	 * @param {Account} 
+	 * @param {Account}
 	 * @return {Array<Transaction>}
 	 */
 	public getTransactions(account?: Account): Array<Transaction> {
-		if(account === undefined && this.account != null) {
-			
+		if (account === undefined && this.account != null) {
 		}
 
-		return;	
+		return;
 	}
 
-	public buildTransaction(){}
-	public signTransaction(){}
+	public buildTransaction() {}
+	public signTransaction() {}
 
-	public suggestTransactionFee(){}
-	public sendTransaction(){}
+	public suggestTransactionFee() {}
+	public sendTransaction() {}
 
-	public getPendingBonce(){}
-	public cancelTransaction(){}
+	public getPendingBonce() {}
+	public cancelTransaction() {}
 
 	// BLOCK
-	public getBlockHeight(){}
+	public getBlockHeight() {}
 
 	// ENCRYPTION TOOLS
-	public encryptWithPublicKey(){}
-	public decryptWithPrivateKey(){}
-	public signMessage(){}
-	public verifySignature(){}
+	public encryptWithPublicKey() {}
+	public decryptWithPrivateKey() {}
+	public signMessage() {}
+	public verifySignature() {}
 
 	// EXCHANGE RATES
-	public getRateIn(){}
+	public getRateIn() {}
 
 	// CHAIN INFO
-	public chainVersion(){}
+	public chainVersion() {}
 }

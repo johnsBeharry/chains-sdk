@@ -38,6 +38,7 @@
 	"devDependencies": {
 		"@types/bip39": "^2.4.2",
 		"@types/jest": "^26.0.0",
+		"@types/openpgp": "^4.4.12",
 		"chai": "^4.2.0",
 		"cucumber": "^5.1.0",
 		"ts-jest": "^26.1.0",
@@ -49,6 +50,7 @@
 		"bip44-constants": "^8.0.0",
 		"bolt11": "^1.2.7",
 		"eth-crypto": "^1.6.0",
-		"jest": "^26.0.1"
+		"jest": "^26.0.1",
+		"openpgp": "^4.10.4"
 	}
 }
